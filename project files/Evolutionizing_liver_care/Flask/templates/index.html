@@ -1,0 +1,121 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Revolutionizing Liver Care</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+            margin: 0;
+            padding: 40px;
+        }
+        .form-container {
+            max-width: 750px;
+            margin: auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        h2 {
+            color: #c0392b;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+        label {
+            display: block;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #34495e;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+        input[type="submit"] {
+            margin-top: 30px;
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background-color: #e74c3c;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #c0392b;
+        }
+        .links {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .links a {
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 500;
+            color: #2980b9;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>🩺 Revolutionizing Liver Care</h2>
+        <p>Enter patient details below to predict the risk of liver cirrhosis</p>
+        <form action="/predict" method="post">
+            <label>Age:</label>
+            <input type="text" name="Age" required>
+
+            <label>Gender (0 = Female, 1 = Male):</label>
+            <input type="text" name="Gender" required>
+
+            <label>Total Bilirubin:</label>
+            <input type="text" name="Total_Bilirubin" required>
+
+            <label>Direct Bilirubin:</label>
+            <input type="text" name="Direct_Bilirubin" required>
+
+            <label>Alkaline Phosphatase:</label>
+            <input type="text" name="Alkaline_Phosphotase" required>
+
+            <label>SGPT:</label>
+            <input type="text" name="SGPT" required>
+
+            <label>SGOT:</label>
+            <input type="text" name="SGOT" required>
+
+            <label>Total Proteins:</label>
+            <input type="text" name="Total_Protiens" required>
+
+            <label>Albumin:</label>
+            <input type="text" name="Albumin" required>
+
+            <label>A/G Ratio:</label>
+            <input type="text" name="Albumin_and_Globulin_Ratio" required>
+
+            <input type="submit" value="Predict Liver Cirrhosis Risk">
+        </form>
+
+        <div class="links">
+            <a href="/inner-page">📘 Learn About This Project</a>
+            <a href="/portfolio-details">📊 See Model Details</a>
+        </div>
+    </div>
+</body>
+</html>
